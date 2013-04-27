@@ -1,0 +1,2 @@
+cd classes
+javaw Game
