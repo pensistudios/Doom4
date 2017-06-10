@@ -28,8 +28,13 @@ public class Game
       // int i = level.returnAnswer();
       
       // level.hide();
-      
-        GameFrame frame = new GameFrame(); //1 mario 2 doom 3 city
+
+      int i = 3;     
+      if (args.length >= 1) {
+        i = Integer.parseInt(args[0]);
+      }
+
+        GameFrame frame = new GameFrame(i); //1 mario 2 doom 3 city
         // frame.setVisible(true);
     }
 }
