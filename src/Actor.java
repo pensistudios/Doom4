@@ -71,35 +71,35 @@ public class Actor extends GameEntity
     {
       if(files[i].equals("1.GIF"))
       {
-        frameOne.loadImage(directoryPath + "\\" + files[i]);
+        frameOne.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("2.GIF"))
       {
-        frameTwo.loadImage(directoryPath + "\\" + files[i]);
+        frameTwo.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("3.GIF"))
       {
-        frameThree.loadImage(directoryPath + "\\" + files[i]);
+        frameThree.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("4.GIF"))
       {
-        frameFour.loadImage(directoryPath + "\\" + files[i]);
+        frameFour.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("1.GIF"))
       {
-        standing.loadImage(directoryPath + "\\" + files[i]);
+        standing.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("punch.GIF"))
       {
-        punching.loadImage(directoryPath + "\\" + files[i]);
+        punching.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("death.GIF"))
       {
-        death.loadImage(directoryPath + "\\" + files[i]);
+        death.loadImage(directoryPath + "/" + files[i]);
       }
       if(files[i].equals("dead.GIF"))
       {
-        dead.loadImage(directoryPath + "\\" + files[i]);
+        dead.loadImage(directoryPath + "/" + files[i]);
       }
     }
     System.out.println("Hero Loaded...");

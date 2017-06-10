@@ -89,16 +89,16 @@ public class GameFrame extends JFrame implements Runnable
     
     level = l;
     
-    heroMenu = new GameImage("data\\menus\\hselection.jpg");
-    menu = new GameImage("data\\menus\\menu.jpg");
-    healthMenu = new GameImage("data\\menus\\health.gif");
-    go = new GameImage("data\\game\\go.gif");
-    gameOver = new GameImage("data\\game\\gameover.bmp");
+    heroMenu = new GameImage("data/menus/hselection.jpg");
+    menu = new GameImage("data/menus/menu.jpg");
+    healthMenu = new GameImage("data/menus/health.gif");
+    go = new GameImage("data/game/go.gif");
+    gameOver = new GameImage("data/game/gameover.bmp");
     
-    GameImage load = new GameImage("data\\menus\\loading.JPG");
+    GameImage load = new GameImage("data/menus/loading.JPG");
     gameLoader = new GameLoader(load);
     
-    menuSound = new GameSound("data\\audio\\intro.mid");
+    menuSound = new GameSound("data/audio/intro.mid");
     menuSound.play();
     
     initFullScreen();
@@ -235,14 +235,14 @@ public class GameFrame extends JFrame implements Runnable
       if(clickedheroArea)
       {
         hero = new Hero(Hero.HeroType.chex);
-        hero.initActor("data\\characters\\warrior");
+        hero.initActor("data/characters/warrior");
         hero.setBounds();
         return hero;
       }
       else if(clickedHeroTwoArea)
       {
         hero = new Hero(Hero.HeroType.doom);
-        hero.initActor("data\\characters\\doom");
+        hero.initActor("data/characters/doom");
         hero.setBounds();
         return hero;
       }
@@ -278,9 +278,9 @@ public class GameFrame extends JFrame implements Runnable
     GameImage two = new GameImage();
     GameImage three = new GameImage();
     
-    one.loadImage("data\\credits\\credits1.JPG");
-    two.loadImage("data\\credits\\credits2.JPG");
-    three.loadImage("data\\credits\\credits3.JPG");
+    one.loadImage("data/credits/credits1.JPG");
+    two.loadImage("data/credits/credits2.JPG");
+    three.loadImage("data/credits/credits3.JPG");
     
     gScr.drawImage(one.image,0,0,null);
     bufferStrategy.show();

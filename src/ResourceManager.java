@@ -28,35 +28,35 @@ public class ResourceManager
     {
       if(files[i].equals("1.GIF"))
       {
-        images.put(name + "1", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "1", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("2.GIF"))
       {
-        images.put(name + "2", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "2", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("3.GIF"))
       {
-        images.put(name + "3", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "3", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("4.GIF"))
       {
-        images.put(name + "4", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "4", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("1.GIF"))
       {
-        images.put(name + "S", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "S", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("punch.GIF"))
       {
-        images.put(name + "P", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "P", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("death.GIF"))
       {
-        images.put(name + "Death", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "Death", new GameImage(directoryPath + "/" + files[i]));
       }
       if(files[i].equals("dead.GIF"))
       {
-        images.put(name + "Dead", new GameImage(directoryPath + "\\" + files[i]));
+        images.put(name + "Dead", new GameImage(directoryPath + "/" + files[i]));
       }
     }
   }

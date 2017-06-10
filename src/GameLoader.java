@@ -32,7 +32,7 @@ public class GameLoader
   public GameLoader(GameImage l)
   {
     nextPixel = 405;
-    bar = new GameImage("data\\menus\\bar.bmp");
+    bar = new GameImage("data/menus/bar.bmp");
     background = new Background();
     enemies = new ArrayList();
     items = new ArrayList();
@@ -57,21 +57,21 @@ public class GameLoader
     switch(ten)
     {
       case 1:
-        br = new BufferedReader(new FileReader("data\\levels\\mario.lvl"));
-        rmbr = new BufferedReader(new FileReader("data\\levels\\mario.lvl"));
+        br = new BufferedReader(new FileReader("data/levels/mario.lvl"));
+        rmbr = new BufferedReader(new FileReader("data/levels/mario.lvl"));
         System.out.println("mario.lvl opened...");
         break;
         
       case 2:
-        br = new BufferedReader(new FileReader("data\\levels\\doom.lvl"));
-        rmbr = new BufferedReader(new FileReader("data\\levels\\doom.lvl"));
+        br = new BufferedReader(new FileReader("data/levels/doom.lvl"));
+        rmbr = new BufferedReader(new FileReader("data/levels/doom.lvl"));
         System.out.println("doom.lvl opened....");
         break;
       
         
       case 3:
-        br = new BufferedReader(new FileReader("data\\levels\\city.lvl"));
-        rmbr = new BufferedReader(new FileReader("data\\levels\\city.lvl"));  
+        br = new BufferedReader(new FileReader("data/levels/city.lvl"));
+        rmbr = new BufferedReader(new FileReader("data/levels/city.lvl"));  
         System.out.println("city.lvl opened...");
         break;
         
@@ -218,13 +218,13 @@ public class GameLoader
     switch(level)
     {
       case 1:
-        temp = new BufferedReader(new FileReader("data\\levels\\mario.lvl")); 
+        temp = new BufferedReader(new FileReader("data/levels/mario.lvl")); 
         break;
       case 2:
-        temp = new BufferedReader(new FileReader("data\\levels\\doom.lvl"));
+        temp = new BufferedReader(new FileReader("data/levels/doom.lvl"));
         break;
       case 3:
-        temp = new BufferedReader(new FileReader("data\\levels\\city.lvl"));
+        temp = new BufferedReader(new FileReader("data/levels/city.lvl"));
         break;
     }
     

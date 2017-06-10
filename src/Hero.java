@@ -31,7 +31,7 @@ public class Hero extends Actor
     stand();
     type = ht;
     setBounds();
-    punchSound = new GameSound("data\\audio\\punch.wav");
+    punchSound = new GameSound("data/audio/punch.wav");
   }
   
   public void setBounds()

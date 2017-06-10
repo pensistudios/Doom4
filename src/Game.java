@@ -16,21 +16,21 @@ public class Game
 {
     public static void main(String[] args) 
     {
-      File watermark = new File("data\\menus\\watermark.bmp");
+      // File watermark = new File("data\\menus\\watermark.bmp");
       
-      LevelFrame level =  new LevelFrame(watermark);
+      // LevelFrame level =  new LevelFrame(watermark);
       
-      while(!level.isReady())
-      {
+      // while(!level.isReady())
+      // {
         
-      }
+      // }
       
-      int i = level.returnAnswer();
+      // int i = level.returnAnswer();
       
-      level.hide();
+      // level.hide();
       
-        GameFrame frame = new GameFrame(i); //1 mario 2 doom 3 city
-        frame.setVisible(true);
+        GameFrame frame = new GameFrame(); //1 mario 2 doom 3 city
+        // frame.setVisible(true);
     }
 }
 
