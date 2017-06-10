@@ -1,6 +1,6 @@
 version 1.337
 
-To Run:
+### To Run:
 
 
 ```
@@ -15,13 +15,13 @@ java Game
 java Game [1-3]
 ```
 
-Controls:
+### Controls:
 
-Arrow Keys move hero
-Spacebar punches
-Q quits
+* Arrow Keys move hero
+* Spacebar punches
+* Q - quits
 
-Notes:
+### Notes:
 
 Multiplayer not implemented
 Enemy AI algorithm works but due to "time contraints" Enemy AI only works moving left
