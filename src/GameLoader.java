@@ -57,21 +57,21 @@ public class GameLoader
     switch(ten)
     {
       case 1:
-        br = new BufferedReader(new FileReader("data/levels/mario.lvl"));
-        rmbr = new BufferedReader(new FileReader("data/levels/mario.lvl"));
+        br = omgReadFiles("data/levels/mario.lvl");
+        rmbr = omgReadFiles("data/levels/mario.lvl");
         System.out.println("mario.lvl opened...");
         break;
         
       case 2:
-        br = new BufferedReader(new FileReader("data/levels/doom.lvl"));
-        rmbr = new BufferedReader(new FileReader("data/levels/doom.lvl"));
+        br = omgReadFiles("data/levels/doom.lvl");
+        rmbr = omgReadFiles("data/levels/doom.lvl");
         System.out.println("doom.lvl opened....");
         break;
       
         
       case 3:
-        br = new BufferedReader(new FileReader("data/levels/city.lvl"));
-        rmbr = new BufferedReader(new FileReader("data/levels/city.lvl"));  
+        br = omgReadFiles("data/levels/city.lvl");
+        rmbr = omgReadFiles("data/levels/city.lvl");  
         System.out.println("city.lvl opened...");
         break;
         
@@ -218,13 +218,13 @@ public class GameLoader
     switch(level)
     {
       case 1:
-        temp = new BufferedReader(new FileReader("data/levels/mario.lvl")); 
+        temp = omgReadFiles("data/levels/mario.lvl"); 
         break;
       case 2:
-        temp = new BufferedReader(new FileReader("data/levels/doom.lvl"));
+        temp = omgReadFiles("data/levels/doom.lvl");
         break;
       case 3:
-        temp = new BufferedReader(new FileReader("data/levels/city.lvl"));
+        temp = omgReadFiles("data/levels/city.lvl");
         break;
     }
     
@@ -235,6 +235,15 @@ public class GameLoader
     }
     
     return counter;
+  }
+
+
+  private BufferedReader omgReadFiles(String path) {
+    return new BufferedReader(
+        new InputStreamReader(
+          this.getClass().getResourceAsStream("/" + path)
+          )
+        );
   }
   
   

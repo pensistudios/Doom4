@@ -12,6 +12,7 @@ import java.io.File;
 public class GameImage
 {
   public BufferedImage image;
+  boolean loaded = false;
   
   
   public GameImage()
@@ -27,8 +28,15 @@ public class GameImage
   public void loadImage(String path)
   {
     System.out.println("Image: " + path);
-    try { image = javax.imageio.ImageIO.read(new File(path)); }
-    catch (Exception e) { System.out.println("Image \""+path+"\" could not be loaded..."); }
+    try {
+      image = javax.imageio.ImageIO.read(this.getClass().getResourceAsStream("/" + path));
+      loaded = true;
+    }
+    catch (Exception e) {
+      System.out.println("Image \""+path+"\" could not be loaded...");
+    }
   }
+
+  public boolean success() { return loaded; }
   
 } 

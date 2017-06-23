@@ -9,6 +9,7 @@
 import java.applet.*;
 import java.io.File;
 import java.util.ArrayList;
+import java.net.URL;
 
 public class GameSound implements Runnable
 {
@@ -17,7 +18,8 @@ public class GameSound implements Runnable
   public GameSound(String path)
   {
     System.out.println("Sound: " + path);
-    try { sound = Applet.newAudioClip((new File(path)).toURL()); }
+    URL url = this.getClass().getResource("/" + path);
+    try { sound = Applet.newAudioClip(url); }
     catch (Exception e) { System.out.println("Sound \""+path+"\" could not be loaded..."); }
     
   }

@@ -9,6 +9,10 @@
 
 import java.io.File;
 import java.awt.*;
+import java.io.*;
+import java.util.Collections;
+import java.net.URL;
+
 
 public class Actor extends GameEntity
 {
@@ -64,9 +68,29 @@ public class Actor extends GameEntity
     isLiving = true;
     reallyDead = false;
     
-    
-    dirPath = new File(directoryPath);
-    String[] files = dirPath.list();
+   
+   // try { 
+      // System.out.println("directoryPath: "+directoryPath);
+      // for (URL url : Collections.list(this.getClass().getClassLoader().getResources(directoryPath))) {
+        // System.out.println(url);
+      // }
+    // } catch (Exception e) { System.out.println("Fucked \""+directoryPath+"\" could not be loaded..."); }
+
+    // dirPath = new File(directoryPath);
+    // String[] files = dirPath.list();
+
+
+    String[] files = {
+      "1.GIF",
+      "2.GIF",
+      "3.GIF",
+      "4.GIF",
+      "1.GIF",
+      "punch.GIF",
+      "death.GIF",
+      "dead.GIF"
+    };
+
     for(int i = 0; i < files.length; i++)
     {
       if(files[i].equals("1.GIF"))

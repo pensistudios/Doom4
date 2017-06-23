@@ -5,7 +5,7 @@ enemy:data/characters/flemoid:895:667:0
 enemy:data/characters/flemoid:1155:679:0
 enemy:data/characters/cyclops:1470:700:6
 enemy:data/characters/spoonj:1900:700:9
-item:data/items/breakfast.gif:300:600:100
+item:data/items/breakfast.gif:500:700:100
 item:data/items/breakfast.gif:1226:600:100
 item:data/items/breakfast.gif:1000:600:100
 item:data/items/breakfast.gif:1643:600:100

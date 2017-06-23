@@ -22,47 +22,35 @@ public class ResourceManager
   
   public void addEnemyImages(String directoryPath, String name)
   {
-    File dirPath = new File(directoryPath);
-    String[] files = dirPath.list();
-    for(int i = 0; i < files.length; i++)
+    name = name.toLowerCase();
+    // File dirPath = new File(directoryPath);
+    // String[] files = dirPath.list();
+    String[] files = {
+      "1.GIF",
+      "2.GIF",
+      "3.GIF",
+      "4.GIF",
+      "1.GIF",
+      "punch.GIF",
+      "death.GIF",
+      "dead.GIF"
+    };
+    // for(int i = 0; i < files.length; i++)
+    for(String path : files)
     {
-      if(files[i].equals("1.GIF"))
-      {
-        images.put(name + "1", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("2.GIF"))
-      {
-        images.put(name + "2", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("3.GIF"))
-      {
-        images.put(name + "3", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("4.GIF"))
-      {
-        images.put(name + "4", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("1.GIF"))
-      {
-        images.put(name + "S", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("punch.GIF"))
-      {
-        images.put(name + "P", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("death.GIF"))
-      {
-        images.put(name + "Death", new GameImage(directoryPath + "/" + files[i]));
-      }
-      if(files[i].equals("dead.GIF"))
-      {
-        images.put(name + "Dead", new GameImage(directoryPath + "/" + files[i]));
+      String fullPath = directoryPath + "/" + path;
+      GameImage gi = new GameImage(fullPath);
+      if (gi.success()) {
+        String id = path.substring(0, path.length() - 4);
+        images.put(name + id, gi);
       }
     }
+    images.put(name+"s", images.get(name+"1"));
   }
   
   public GameImage getImage(String i)
   {
+    i = i.toLowerCase();
     return (GameImage) images.get(i);
   }  
 }
