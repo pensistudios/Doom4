@@ -310,7 +310,7 @@ public class GameFrame extends JFrame implements Runnable
   public void loadGame(int lev) 
   {
     try { gameLoader.initGame(lev, gScr, bufferStrategy); }
-    catch (Exception e) {  e.printStackTrace(); System.out.println("NOT LOADED"); } 
+    catch (Exception e) {  e.printStackTrace(); System.out.println("ERROR: NOT LOADED"); } 
     enemies = gameLoader.enemies;
     items = gameLoader.items;
     background = gameLoader.background;

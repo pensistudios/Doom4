@@ -267,6 +267,7 @@ public class Actor extends GameEntity
         }
         case 4:
         {
+          System.out.println("["+punching.initPath+"] " + punching.success());
           g.drawImage(punching.image, X, Y, null);
         }
       }

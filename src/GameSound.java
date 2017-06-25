@@ -20,7 +20,7 @@ public class GameSound implements Runnable
     System.out.println("Sound: " + path);
     URL url = this.getClass().getResource("/" + path);
     try { sound = Applet.newAudioClip(url); }
-    catch (Exception e) { System.out.println("Sound \""+path+"\" could not be loaded..."); }
+    catch (Exception e) { System.out.println("ERROR: Sound \""+path+"\" could not be loaded..."); }
     
   }
   

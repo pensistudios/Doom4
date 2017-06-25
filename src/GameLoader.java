@@ -207,7 +207,8 @@ public class GameLoader
       nextPixel += 16;
     }
     b.show();
-    
+
+    rm.getHashMap().forEach((k,v) -> System.out.println("[ResourceManager] "+ k + " -> " + v.success())); 
   }
   
   private int wordCount(int level) throws FileNotFoundException, IOException

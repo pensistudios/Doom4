@@ -53,4 +53,6 @@ public class ResourceManager
     i = i.toLowerCase();
     return (GameImage) images.get(i);
   }  
+
+  public HashMap<String, GameImage> getHashMap() { return images; }
 }
