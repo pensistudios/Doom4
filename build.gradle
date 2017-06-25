@@ -1,4 +1,14 @@
+
+plugins {
+  id 'edu.sc.seis.launch4j' version '2.3.0'
+}
+
 apply plugin: "java"
+
+launch4j {
+  mainClassName = 'Game'
+}
+
 
 version = '1.0'
 ext {
